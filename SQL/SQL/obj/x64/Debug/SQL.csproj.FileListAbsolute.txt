@@ -1,0 +1,11 @@
+C:\Users\iwane\OneDrive\документи\visual studio 2017\Projects\SQL\SQL\bin\x64\Debug\SQL.exe.config
+C:\Users\iwane\OneDrive\документи\visual studio 2017\Projects\SQL\SQL\bin\x64\Debug\SQL.exe
+C:\Users\iwane\OneDrive\документи\visual studio 2017\Projects\SQL\SQL\bin\x64\Debug\SQL.pdb
+C:\Users\iwane\OneDrive\документи\visual studio 2017\Projects\SQL\SQL\bin\x64\Debug\MPI.dll
+C:\Users\iwane\OneDrive\документи\visual studio 2017\Projects\SQL\SQL\bin\x64\Debug\MPIUtils.dll
+C:\Users\iwane\OneDrive\документи\visual studio 2017\Projects\SQL\SQL\bin\x64\Debug\MPI.xml
+C:\Users\iwane\OneDrive\документи\visual studio 2017\Projects\SQL\SQL\obj\x64\Debug\SQL.csprojResolveAssemblyReference.cache
+C:\Users\iwane\OneDrive\документи\visual studio 2017\Projects\SQL\SQL\obj\x64\Debug\SQL.Properties.Resources.resources
+C:\Users\iwane\OneDrive\документи\visual studio 2017\Projects\SQL\SQL\obj\x64\Debug\SQL.csproj.GenerateResource.Cache
+C:\Users\iwane\OneDrive\документи\visual studio 2017\Projects\SQL\SQL\obj\x64\Debug\SQL.exe
+C:\Users\iwane\OneDrive\документи\visual studio 2017\Projects\SQL\SQL\obj\x64\Debug\SQL.pdb

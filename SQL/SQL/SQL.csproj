@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96FD374A-12F5-4A95-8231-CEA9593D0CC7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SQL</RootNamespace>
+    <AssemblyName>SQL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SQL.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MPI, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MPI.NET.1.2.0.0\lib\net40\MPI.dll</HintPath>
+    </Reference>
+    <Reference Include="MPIUtils, Version=0.1.0.0, Culture=neutral, PublicKeyToken=e35b242c18c115bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\MPI.NET.1.2.0.0\lib\net40\MPIUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Functionality\Select\Func_Listener.cs" />
+    <Compile Include="Functionality\CREATE_Listener.cs" />
+    <Compile Include="Functionality\DataBase\DB.cs" />
+    <Compile Include="Functionality\INSERT_Listener.cs" />
+    <Compile Include="Functionality\Select\Order_by_Listener.cs" />
+    <Compile Include="Functionality\Program_Listener.cs" />
+    <Compile Include="Functionality\Select\SELECT_Listener.cs" />
+    <Compile Include="Functionality\DataBase\Column.cs" />
+    <Compile Include="Functionality\VAR.cs" />
+    <Compile Include="Trigramm\Trigrama.cs" />
+    <Compile Include="Trigramm\LexemTrigrama.cs" />
+    <Compile Include="Resources\Code.cs" />
+    <Compile Include="Lexem\BNF\BNF.cs" />
+    <Compile Include="Lexem\Lexem.cs" />
+    <Compile Include="Lexem\LexemTree.cs" />
+    <Compile Include="Lexem\Const.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Lexem\BNF\Rule.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Functionality\DataBase\Table.cs" />
+    <Compile Include="Trigramm\Pair.cs" />
+    <Compile Include="Trigramm\Sub_Pair.cs" />
+    <Compile Include="Trigramm\TrigramsParcer.cs" />
+    <Compile Include="Functionality\Select\Where_Listener.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\BNF.txt" />
+    <Content Include="Resources\BNF.xml" />
+    <Content Include="Resources\Code.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

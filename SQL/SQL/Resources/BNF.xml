@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<BNF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <rules>
+    <Rule>
+      <name>&lt;Програма&gt;</name>
+      <rule>{&lt;Транзакція&gt;;}&lt;Транзакція&gt;[';']</rule>
+    </Rule>
+    <Rule>
+      <name>&lt;Space&gt;</name>
+      <rule>' '{' '}</rule>
+    </Rule>
+    <Rule>
+      <name>&lt;Команда&gt;</name>
+      <rule />
+    </Rule>
+  </rules>
+  <formatter />
+  <length>3</length>
+</BNF>
