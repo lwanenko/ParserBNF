@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SQL
 {
+    /// <summary>
+    /// Це те чим заміняється невідома послідовність триграм
+    /// </summary>
     class Sub_Pair
     {
         public Pair p;

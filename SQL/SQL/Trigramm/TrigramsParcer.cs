@@ -59,7 +59,7 @@ namespace SQL
                 bool flag = false;
                 foreach (var cur2 in rez)
                 {
-                    if (cur1.Equals(cur2.Key))
+                    if (cur1.equals(cur2.Key))
                     {
                          rez[cur2.Key]++;
                         flag = true;

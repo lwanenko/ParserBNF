@@ -26,8 +26,19 @@ namespace SQL
             //якщо код повністю не входить в дерево 
             if (flag == true && mainLexem.pos != mainLexem.code.length() -1)
                 Console.WriteLine("ERROR CODE!!!" + (mainLexem.pos - mainLexem.code.length() + 1));    
-        }        
-        
+        }
+
+        public LexemTree(string cod)
+        {
+            var code = new Code();
+            code.set(cod);
+            mainLexem = new Lexem(0, "<Program>", 0, code);
+            var flag = mainLexem.IsLexem();
+
+            //якщо код повністю не входить в дерево 
+            if (flag == true && mainLexem.pos != mainLexem.code.length() - 1)
+                Console.WriteLine("ERROR CODE!!!" + (mainLexem.pos - mainLexem.code.length() + 1));
+        }
         #endregion
     }
 }

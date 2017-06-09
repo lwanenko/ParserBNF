@@ -61,10 +61,57 @@ namespace SQL.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
-        ///&lt;root&gt;
+        ///   Looks up a localized string similar to CREATE TABLE Students (id int, FirstName varchar(50), LastName varchar(50), PRIMERY KEY (id) );
+        ///    INSERT INTO Students VALUES (&quot;Slavik&quot; , &quot;Ivanenko&quot; );
+        ///    INSERT INTO Students VALUES (&quot;Danil&quot; , &quot;Gigamovsky&quot; );
+        ///    INSERT INTO Students VALUES (&quot;Max&quot; , &quot;Moskalchyk&quot; );
+        ///    INSERT INTO Students VALUES (&quot;Azim&quot; , &quot;Plathanov&quot; );
+        ///    INSERT INTO Students VALUES (&quot;Max&quot; , &quot;Osypenok&quot; );
+        ///    INSERT INTO Students VALUES (&quot;OLEH&quot; , &quot;OLEXandrov&quot; );
         ///
-        ///&lt;/root&gt;.
+        ///CREATE TABLE Marks (id int, value int, idStud int, subj varchar [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Avtor1 {
+            get {
+                return ResourceManager.GetString("Avtor1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to REATE  TABLE  STUDENTS  (ID  INT,  FIRSTNAME  varchar(50),  LASTNAME  varchar(50),  PRIMERY  KEY  (ID)  );
+        ///        INSERT  INTO  STUDENTS  VALUES  (&quot;Slavik&quot;  ,  &quot;Ivanenko&quot;  );
+        ///        INSERT  INTO  STUDENTS  VALUES  (&quot;Danil&quot;  ,  &quot;Gigamovsky&quot;  );
+        ///        INSERT  INTO  STUDENTS  VALUES  (&quot;Max&quot;  ,  &quot;Moskalchyk&quot;  );
+        ///        INSERT  INTO  STUDENTS  VALUES  (&quot;Azim&quot;  ,  &quot;Plathanov&quot;  );
+        ///        INSERT  INTO  STUDENTS  VALUES  (&quot;Max&quot;  ,  &quot;Osypenok&quot;  );
+        ///        INSERT  INTO  STUDENTS  VALUES  (&quot;OLEH&quot;  ,  &quot;OLEXa [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Avtor2 {
+            get {
+                return ResourceManager.GetString("Avtor2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;BNF xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+        ///  &lt;rules&gt;
+        ///    &lt;Rule&gt;
+        ///      &lt;name&gt;&amp;lt;Програма&amp;gt;&lt;/name&gt;
+        ///      &lt;rule&gt;{&amp;lt;Транзакція&amp;gt;;}&amp;lt;Транзакція&amp;gt;[&apos;;&apos;]&lt;/rule&gt;
+        ///    &lt;/Rule&gt;
+        ///    &lt;Rule&gt;
+        ///      &lt;name&gt;&amp;lt;Space&amp;gt;&lt;/name&gt;
+        ///      &lt;rule&gt;&apos; &apos;{&apos; &apos;}&lt;/rule&gt;
+        ///    &lt;/Rule&gt;
+        ///    &lt;Rule&gt;
+        ///      &lt;name&gt;&amp;lt;Команда&amp;gt;&lt;/name&gt;
+        ///      &lt;rule /&gt;
+        ///    &lt;/Rule&gt;
+        ///  &lt;/rules&gt;
+        ///  &lt;formatter /&gt;
+        ///  &lt;length&gt;3&lt;/length&gt;
+        ///&lt;/BNF&gt;.
         /// </summary>
         public static string BNF {
             get {
@@ -73,7 +120,15 @@ namespace SQL.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to CREATE TABLE Students (id int, FirstName varchar(50), LastName varchar(50), PRIMERY KEY (id) );
+        ///    INSERT INTO Students VALUES (&quot;Slavik&quot; , &quot;Ivanenko&quot; );
+        ///    INSERT INTO Students VALUES (&quot;Danil&quot; , &quot;Gigamovsky&quot; );
+        ///    INSERT INTO Students VALUES (&quot;Max&quot; , &quot;Moskalchyk&quot; );
+        ///    INSERT INTO Students VALUES (&quot;Azim&quot; , &quot;Plathanov&quot; );
+        ///    INSERT INTO Students VALUES (&quot;Max&quot; , &quot;Osypenok&quot; );
+        ///    INSERT INTO Students VALUES (&quot;OLEH&quot; , &quot;OLEXandrov&quot; );
+        ///
+        ///CREATE TABLE Marks (id int, value int, idStud int, subj varchar [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Code {
             get {

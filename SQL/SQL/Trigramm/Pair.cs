@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SQL
 {
+    /// <summary>
+    /// Пара значень типу інт
+    /// </summary>
     class Pair
     {
         public int i;

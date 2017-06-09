@@ -148,6 +148,8 @@ namespace SQL
                                                 {
                                                     if (!intValue && comparer(cur[tab.getNumColumn(column.getLexemCode())], value) < 0)
                                                          SELECT_Listener.getRowForThisTable(cur, tab.columns, ref t);
+                                                    if (intValue && reversComparer(cur[tab.getNumColumn(column.getLexemCode())], value) < 0)
+                                                        SELECT_Listener.getRowForThisTable(cur, tab.columns, ref t);
                                                 }
                                             }
                                         }
@@ -162,6 +164,8 @@ namespace SQL
                                             {
                                                 if (!intValue && comparer(cur[tab.getNumColumn(column.getLexemCode())], value) > 0)
                                                         SELECT_Listener.getRowForThisTable(cur, tab.columns, ref t);
+                                                if (intValue && reversComparer(cur[tab.getNumColumn(column.getLexemCode())], value) > 0)
+                                                    SELECT_Listener.getRowForThisTable(cur, tab.columns, ref t);
                                             }
                                         }
                                     }
@@ -178,6 +182,9 @@ namespace SQL
                                                 {
                                                     if (!intValue && comparer(cur[tab.getNumColumn(column.getLexemCode())], value) > 0)
                                                             SELECT_Listener.getRowForThisTable(cur, tab.columns, ref t);
+                                                    else
+                                                        if (intValue && reversComparer(cur[tab.getNumColumn(column.getLexemCode())], value) > 0)
+                                                        SELECT_Listener.getRowForThisTable(cur, tab.columns, ref t);
                                                 }
                                             }
                                         }
@@ -192,6 +199,8 @@ namespace SQL
                                             {
                                                 if (!intValue && comparer(cur[tab.getNumColumn(column.getLexemCode())], value) < 0)
                                                         SELECT_Listener.getRowForThisTable(cur, tab.columns, ref t);
+                                                if (intValue && reversComparer(cur[tab.getNumColumn(column.getLexemCode())], value) < 0)
+                                                    SELECT_Listener.getRowForThisTable(cur, tab.columns, ref t);
                                             }
                                         }
                                     }

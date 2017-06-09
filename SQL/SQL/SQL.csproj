@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analysis\AnalysisTrigram.cs" />
     <Compile Include="Functionality\Select\Func_Listener.cs" />
     <Compile Include="Functionality\CREATE_Listener.cs" />
     <Compile Include="Functionality\DataBase\DB.cs" />
@@ -68,7 +69,6 @@
     <Compile Include="Functionality\Program_Listener.cs" />
     <Compile Include="Functionality\Select\SELECT_Listener.cs" />
     <Compile Include="Functionality\DataBase\Column.cs" />
-    <Compile Include="Functionality\VAR.cs" />
     <Compile Include="Trigramm\Trigrama.cs" />
     <Compile Include="Trigramm\LexemTrigrama.cs" />
     <Compile Include="Resources\Code.cs" />
@@ -95,6 +95,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Avtor1.txt" />
+    <Content Include="Resources\Avtor2.txt" />
     <Content Include="Resources\BNF.txt" />
     <Content Include="Resources\BNF.xml" />
     <Content Include="Resources\Code.txt" />

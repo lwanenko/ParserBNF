@@ -37,7 +37,7 @@ namespace SQL
         #endregion
 
 
-        public bool Equals(LexemTrigrama t)
+        public bool equals(LexemTrigrama t)
         {
             if (   (Node1 != t.Node1)
                 || (Node1 != t.Node1)
